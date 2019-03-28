@@ -1,5 +1,6 @@
 package com.qa.demorunner;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -9,6 +10,7 @@ public class lisssst {
 
 		// TODO Auto-generated method stub
 		List<Integer> numbers = Arrays.asList(3, 32, 2, 2, 3, 7, 3, 5, 9, 8, 12);
+		ArrayList<Integer> square = new ArrayList<Integer>();
 
 		for (int number : numbers) {
 			System.out.println(number);
@@ -47,14 +49,15 @@ public class lisssst {
 			for (int number : numbers) {
 
 				int squared = number * number;
-
+				
+				square.add(squared);
+				
 				System.out.println(squared);
-
-				List<Integer> square = Arrays.asList(squared);
-
+				
 				System.out.println(square);
 
 			}
+			
 
 		}
 	}
